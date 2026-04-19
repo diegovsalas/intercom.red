@@ -1,0 +1,11 @@
+# robots.txt · intercom.red
+# https://intercom.red/
+
+User-agent: *
+Allow: /
+
+# Disallow internal/utility paths if added later
+# Disallow: /admin/
+# Disallow: /tmp/
+
+Sitemap: https://intercom.red/sitemap.xml

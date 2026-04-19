@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" role="img" aria-label="Secretaría de Educación Pública">
+  <circle cx="38" cy="45" r="30" fill="none" stroke="#9f2241" stroke-width="2"/>
+  <text x="38" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#9f2241">EUM</text>
+  <text x="80" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="700" fill="#9f2241" letter-spacing="-1">SEP</text>
+  <text x="164" y="40" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#ad8047" letter-spacing="1.5">SECRETARÍA DE</text>
+  <text x="164" y="54" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#ad8047" letter-spacing="1.5">EDUCACIÓN PÚBLICA</text>
+</svg>

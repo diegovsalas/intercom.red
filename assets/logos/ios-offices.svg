@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 90" role="img" aria-label="IOS Offices">
+  <g transform="translate(4,10)">
+    <path d="M 6 24 L 26 10 L 46 24 L 26 38 Z" fill="#1aa3a8" opacity="0.85"/>
+    <path d="M 6 24 L 26 38 L 26 62 L 6 48 Z" fill="#0d7f82"/>
+    <path d="M 26 38 L 46 24 L 46 48 L 26 62 Z" fill="#aadfe1"/>
+  </g>
+  <text x="62" y="52" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="900" fill="#2d2d2d" letter-spacing="-0.5">IOS OFFICES</text>
+  <text x="62" y="72" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#666" letter-spacing="1.8">OFICINAS EQUIPADAS EN RENTA</text>
+</svg>

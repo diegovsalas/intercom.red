@@ -21,8 +21,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <!-- End Google Tag Manager -->
 <title>INTERCOM — Ingeniería en Seguridad Electrónica Industrial · Nuevo León</title>
-<meta name="description" content="Ingeniería en redes de comunicación y seguridad electrónica para operaciones industriales, corporativas y de misión crítica. CCTV, control de acceso, detección NFPA 72 y monitoreo SOC 24/7 para plantas, centros de distribución y corporativos. 22 años en Nuevo León.">
-<meta name="keywords" content="seguridad electrónica industrial Monterrey, CCTV industrial Nuevo León, control de acceso empresarial, detección de incendios NFPA 72, integrador de seguridad industrial, sistemas para plantas industriales, seguridad para centros de distribución, seguridad corporativa Monterrey, misión crítica, parques industriales Nuevo León, redes de comunicación industrial, ingeniería en seguridad electrónica, SOC industrial, auditoría de seguridad, monitoreo 24/7, NOM-008-STPS, ONVIF OSDP, INTERCOM México">
+<meta name="description" content="Ingeniería en seguridad electrónica industrial para plantas, CEDIs y corporativos: CCTV, control de acceso y detección NFPA 72 — más una plataforma de productos recurrentes (Video Analytics con IA, Hardware-as-a-Service, SOC remoto 24/7, compliance SaaS y ciberseguridad OT). 22 años en Nuevo León.">
+<meta name="keywords" content="seguridad electrónica industrial Monterrey, CCTV industrial Nuevo León, control de acceso empresarial, detección de incendios NFPA 72, integrador de seguridad industrial, sistemas para plantas industriales, seguridad para centros de distribución, seguridad corporativa Monterrey, misión crítica, parques industriales Nuevo León, redes de comunicación industrial, ingeniería en seguridad electrónica, SOC industrial, auditoría de seguridad, monitoreo 24/7, NOM-008-STPS, ONVIF OSDP, video analytics IA, detección de EPP en planta, reconocimiento de placas LPR, hardware as a service seguridad, HaaS CCTV, monitoring operations center México, SaaS NFPA compliance, ciberseguridad OT IoT, seguridad industrial México, INTERCOM México">
 <meta name="author" content="INTERCOM México">
 <meta name="theme-color" content="#0a0b0d">
 <link rel="canonical" href="https://intercom.red/">
@@ -57,8 +57,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "telephone": "+52-81-2731-3112",
   "email": "proyectos@intercom.red",
   "foundingDate": "2004",
-  "knowsAbout": ["CCTV industrial", "Control de acceso empresarial", "Detección de incendios NFPA 72", "Redes de comunicación industrial", "Monitoreo SOC 24/7", "Seguridad perimetral", "Auditoría de seguridad electrónica", "Biometría", "ONVIF", "OSDP", "NOM-008-STPS"],
+  "knowsAbout": ["CCTV industrial", "Control de acceso empresarial", "Detección de incendios NFPA 72", "Redes de comunicación industrial", "Monitoreo SOC 24/7", "Seguridad perimetral", "Auditoría de seguridad electrónica", "Biometría", "ONVIF", "OSDP", "NOM-008-STPS", "Video Analytics con IA", "Hardware-as-a-Service HaaS", "Monitoring Operations Center remoto", "SaaS de compliance NFPA", "Benchmarking de seguridad física", "Ciberseguridad OT / IoT", "Reconocimiento de placas LPR", "Detección de EPP con visión computacional"],
   "slogan": "Protegemos lo que no puede fallar",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Plataforma INTERCOM",
+    "itemListElement": [
+      {"@type": "Offer", "name": "Video Analytics Layer (VAL)", "description": "IA de visión sobre CCTV existente: detección de EPP, conteo, intrusión, humo y placas.", "availability": "https://schema.org/InStock"},
+      {"@type": "Offer", "name": "INTERCOM Total (HaaS)", "description": "Hardware-as-a-Service: equipo, instalación, software y mantenimiento en una sola cuota mensual.", "availability": "https://schema.org/InStock"},
+      {"@type": "Offer", "name": "Monitoring Operations Center (MOC)", "description": "SOC físico 24/7 con operadores humanos e IA en San Nicolás.", "availability": "https://schema.org/InStock"},
+      {"@type": "Offer", "name": "Safety Compliance Cloud (SCC)", "description": "SaaS vertical para cumplimiento NFPA 72 y NOM-008-STPS.", "availability": "https://schema.org/PreOrder"},
+      {"@type": "Offer", "name": "Security Benchmark (BNK)", "description": "Reporte trimestral anonimizado de +500 sitios industriales en México.", "availability": "https://schema.org/PreOrder"},
+      {"@type": "Offer", "name": "Integrator Network (NET)", "description": "Red nacional de integradores certificados bajo la metodología INTERCOM.", "availability": "https://schema.org/PreOrder"},
+      {"@type": "Offer", "name": "OT / IoT Security", "description": "Ciberseguridad para infraestructura de seguridad física: pentest, segmentación, VPN, monitoreo.", "availability": "https://schema.org/PreOrder"}
+    ]
+  },
   "areaServed": {
     "@type": "State",
     "name": "Nuevo León, México"
@@ -801,6 +814,111 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 img { display: block; max-width: 100%; }
 
 ::selection { background: var(--amber); color: var(--ink); }
+
+/* ============================================================
+   PLATAFORMA · product layer on top of installed base
+   ============================================================ */
+#plataforma {
+  background: linear-gradient(180deg, var(--ink) 0%, var(--carbon) 100%);
+}
+.plat-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--edge);
+  border: 1px solid var(--edge);
+}
+.plat-card {
+  background: var(--carbon);
+  padding: 28px 26px;
+  display: flex; flex-direction: column; gap: 14px;
+  transition: background 0.2s;
+  position: relative;
+  min-height: 360px;
+}
+.plat-card:hover { background: var(--steel); }
+.plat-card-wide { grid-column: 1 / -1; min-height: auto; }
+.plat-head {
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--font-mono); font-size: 11px;
+  flex-wrap: wrap; gap: 8px;
+}
+.plat-id {
+  color: var(--amber);
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.plat-status {
+  padding: 3px 9px;
+  font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+.plat-status-live {
+  color: var(--signal);
+  border-color: rgba(74,222,128,0.35);
+  background: rgba(74,222,128,0.07);
+}
+.plat-status-soon {
+  color: var(--amber);
+  border-color: rgba(255,182,39,0.35);
+  background: rgba(255,182,39,0.07);
+}
+.plat-status-roadmap {
+  color: var(--ash-2);
+  border-color: var(--edge);
+}
+.plat-card h3 {
+  font-family: var(--font-display);
+  font-size: 22px; font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--paper);
+  line-height: 1.15;
+  margin: 2px 0 0;
+}
+.plat-tag {
+  font-size: 14px; color: var(--paper-dim);
+  line-height: 1.55;
+}
+.plat-bullets {
+  list-style: none; padding: 0; margin: 0;
+  font-size: 13px; color: var(--ash);
+  line-height: 1.75;
+}
+.plat-bullets li {
+  padding-left: 16px; position: relative;
+}
+.plat-bullets li::before {
+  content: ""; position: absolute;
+  left: 0; top: 10px;
+  width: 8px; height: 1px;
+  background: var(--amber);
+}
+.plat-foot {
+  margin-top: auto; padding-top: 14px;
+  border-top: 1px solid var(--edge);
+}
+.plat-meta {
+  font-size: 10px; color: var(--ash-2);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  font-family: var(--font-mono);
+}
+.plat-card-wide .plat-body {
+  display: grid; grid-template-columns: 1.2fr 2fr; gap: 28px; align-items: start;
+}
+.plat-card-wide .plat-bullets { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 24px; }
+
+@media (max-width: 1024px) {
+  .plat-grid { grid-template-columns: repeat(2, 1fr); }
+  .plat-card-wide .plat-body { grid-template-columns: 1fr; }
+  .plat-card-wide .plat-bullets { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .plat-grid { grid-template-columns: 1fr; }
+  .plat-card { min-height: auto; padding: 24px 20px; }
+}
 
 /* Screen-reader-only utility — indexed by Google, read by a11y tech, hidden visually */
 .sr-only {
@@ -2045,11 +2163,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
     <ul class="nav-links">
       <li><a href="#servicios"><span class="num">01</span>Servicios</a></li>
-      <li><a href="#catalogo"><span class="num">02</span>Manifiesto</a></li>
-      <li><a href="#cobertura"><span class="num">03</span>Cobertura</a></li>
-      <li><a href="#proyectos"><span class="num">04</span>Proyectos</a></li>
-      <li><a href="#poliza"><span class="num">05</span>Póliza</a></li>
-      <li><a href="#contacto"><span class="num">06</span>Contacto</a></li>
+      <li><a href="#plataforma"><span class="num">02</span>Plataforma</a></li>
+      <li><a href="#catalogo"><span class="num">03</span>Manifiesto</a></li>
+      <li><a href="#cobertura"><span class="num">04</span>Cobertura</a></li>
+      <li><a href="#proyectos"><span class="num">05</span>Proyectos</a></li>
+      <li><a href="#poliza"><span class="num">06</span>Póliza</a></li>
+      <li><a href="#contacto"><span class="num">07</span>Contacto</a></li>
     </ul>
     <div class="nav-right">
       <a href="tel:+528127313112" class="nav-phone">
@@ -2326,13 +2445,163 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ============================================================
+     PLATAFORMA · §02 · product layer sobre base instalada
+     ============================================================ -->
+<section id="plataforma">
+  <div class="wrap-lg">
+    <div class="sec-head">
+      <div class="meta">
+        <div class="index"><b>§02</b> / Plataforma</div>
+        <div class="desc">Siete capas de producto recurrente que se integran sobre la infraestructura instalada. Monetiza tu base actual de CCTV, control de acceso y detección sin reemplazar hardware.</div>
+      </div>
+      <h2>De integrador<br>a <em>plataforma de seguridad.</em></h2>
+    </div>
+
+    <div class="plat-grid">
+
+      <article class="plat-card">
+        <div class="plat-head">
+          <span class="plat-id">PROD-01 · VAL</span>
+          <span class="plat-status plat-status-live">Disponible</span>
+        </div>
+        <h3>Video Analytics Layer</h3>
+        <p class="plat-tag">Inteligencia artificial de visión sobre las cámaras que ya tienes instaladas. Sin reemplazar hardware.</p>
+        <ul class="plat-bullets">
+          <li>Detección de EPP (cascos, chalecos, calzado) en plantas</li>
+          <li>Conteo, heatmaps y dwell-time en retail</li>
+          <li>Intrusión perimetral con alertas proactivas</li>
+          <li>Detección de humo y fuego por visión computacional</li>
+          <li>Reconocimiento de placas en accesos de CEDIs</li>
+        </ul>
+        <div class="plat-foot">
+          <span class="plat-meta">Add-on mensual · integrable en 24 h</span>
+        </div>
+      </article>
+
+      <article class="plat-card">
+        <div class="plat-head">
+          <span class="plat-id">PROD-02 · HaaS</span>
+          <span class="plat-status plat-status-live">Disponible</span>
+        </div>
+        <h3>INTERCOM Total</h3>
+        <p class="plat-tag">Hardware-as-a-Service: una sola cuota mensual. Sin CAPEX, sin compras de equipo.</p>
+        <ul class="plat-bullets">
+          <li>Equipos, instalación, software y monitoreo</li>
+          <li>Mantenimiento y reemplazos incluidos</li>
+          <li>Escalas cámaras y lectoras mes a mes</li>
+          <li>Aprobación financiera como OPEX, no CAPEX</li>
+        </ul>
+        <div class="plat-foot">
+          <span class="plat-meta">Contrato 36 / 48 meses · OPEX puro</span>
+        </div>
+      </article>
+
+      <article class="plat-card">
+        <div class="plat-head">
+          <span class="plat-id">PROD-03 · MOC</span>
+          <span class="plat-status plat-status-live">Disponible</span>
+        </div>
+        <h3>Monitoring Operations Center</h3>
+        <p class="plat-tag">SOC físico 24/7 en San Nicolás. Operadores humanos + IA validan y responden cada evento en tiempo real.</p>
+        <ul class="plat-bullets">
+          <li>Validación dual IA + operador humano</li>
+          <li>Voceo remoto al sitio al detectar incidente</li>
+          <li>Protocolo con seguridad privada o 911</li>
+          <li>Evidencia forense automática con cadena de custodia</li>
+        </ul>
+        <div class="plat-foot">
+          <span class="plat-meta">Por sitio · 24 / 7 / 365 · tiempo real</span>
+        </div>
+      </article>
+
+      <article class="plat-card">
+        <div class="plat-head">
+          <span class="plat-id">PROD-04 · SCC</span>
+          <span class="plat-status plat-status-soon">Q4 2026</span>
+        </div>
+        <h3>Safety Compliance Cloud</h3>
+        <p class="plat-tag">SaaS vertical para cumplimiento NFPA 72 y NOM-008-STPS. Digitaliza la bitácora que hoy vive en Excel.</p>
+        <ul class="plat-bullets">
+          <li>Bitácora digital de mantenimientos preventivos</li>
+          <li>Reportes automáticos para auditoría STPS</li>
+          <li>QR por detector, extintor y luminaria</li>
+          <li>App móvil para ejecución de check-lists</li>
+        </ul>
+        <div class="plat-foot">
+          <span class="plat-meta">SaaS · por planta · no requiere hardware INTERCOM</span>
+        </div>
+      </article>
+
+      <article class="plat-card">
+        <div class="plat-head">
+          <span class="plat-id">PROD-05 · BNK</span>
+          <span class="plat-status plat-status-soon">Q3 2026</span>
+        </div>
+        <h3>Security Benchmark</h3>
+        <p class="plat-tag">Reporte trimestral de inteligencia con data anonimizada de +500 sitios industriales en México.</p>
+        <ul class="plat-bullets">
+          <li>Incidentes por sector, zona y turno</li>
+          <li>Costo promedio por m² protegido</li>
+          <li>Tiempos de respuesta benchmarks por industria</li>
+          <li>Target: aseguradoras, brokers, CAINTRA, fondos</li>
+        </ul>
+        <div class="plat-foot">
+          <span class="plat-meta">Reporte trimestral · licencia corporativa</span>
+        </div>
+      </article>
+
+      <article class="plat-card">
+        <div class="plat-head">
+          <span class="plat-id">PROD-06 · NET</span>
+          <span class="plat-status plat-status-roadmap">2027</span>
+        </div>
+        <h3>Integrator Network</h3>
+        <p class="plat-tag">Red nacional de integradores certificados bajo la metodología operativa INTERCOM.</p>
+        <ul class="plat-bullets">
+          <li>Certificación operativa y auditoría semestral</li>
+          <li>Acceso compartido a SOC y SaaS Compliance</li>
+          <li>Cobertura Bajío, Occidente, Centro del país</li>
+          <li>Licencia + regalía mensual + SaaS obligatorio</li>
+        </ul>
+        <div class="plat-foot">
+          <span class="plat-meta">Programa nacional · licencia + regalía</span>
+        </div>
+      </article>
+
+      <article class="plat-card plat-card-wide">
+        <div class="plat-head">
+          <span class="plat-id">PROD-07 · OT</span>
+          <span class="plat-status plat-status-roadmap">Roadmap 2027 – 2028</span>
+        </div>
+        <div class="plat-body">
+          <div>
+            <h3>OT / IoT Security</h3>
+            <p class="plat-tag">Ciberseguridad para la infraestructura de seguridad física que instalamos. Cada cámara IP, controlador y panel es un vector; los aseguramos.</p>
+            <div class="plat-meta" style="margin-top:16px">Recurring · por sitio · integrado con MOC</div>
+          </div>
+          <ul class="plat-bullets">
+            <li>Pentesting de sistemas físicos conectados</li>
+            <li>Segmentación de red para NVRs y paneles de incendio</li>
+            <li>VPN dedicadas para acceso remoto a sitio</li>
+            <li>Monitoreo de anomalías en tráfico de cámaras</li>
+            <li>Hardening de controladores ONVIF/OSDP</li>
+            <li>Incident response coordinado con MOC</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      CATALOG / MANIFEST
      ============================================================ -->
 <section id="catalogo">
   <div class="wrap-lg">
     <div class="sec-head">
       <div class="meta">
-        <div class="index"><b>§02</b> / Manifiesto</div>
+        <div class="index"><b>§03</b> / Manifiesto</div>
         <div class="desc">Cada visita de mantenimiento ejecuta y documenta cada uno de los siguientes procedimientos.</div>
       </div>
       <h2>Protocolo de mantenimiento,<br><em>sin líneas opacas.</em></h2>
@@ -2423,7 +2692,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap-lg">
     <div class="sec-head">
       <div class="meta">
-        <div class="index"><b>§03</b> / Cobertura</div>
+        <div class="index"><b>§04</b> / Cobertura</div>
         <div class="desc">Centro de operaciones en San Nicolás con despacho a toda el área metropolitana y Nuevo León.</div>
       </div>
       <h2>Respuesta en menos de <em>cuatro horas,</em><br>en toda el área metropolitana.</h2>
@@ -2527,7 +2796,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap-lg">
     <div class="sec-head">
       <div class="meta">
-        <div class="index"><b>§04</b> / Proyectos</div>
+        <div class="index"><b>§05</b> / Proyectos</div>
         <div class="desc">Una muestra representativa. Instalaciones completas, auditorías y migraciones en curso.</div>
       </div>
       <h2>Operaciones que no pueden<br><em>tener un solo punto ciego.</em></h2>
@@ -2640,7 +2909,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap-lg">
     <div class="sec-head">
       <div class="meta">
-        <div class="index"><b>§05</b> / Credenciales</div>
+        <div class="index"><b>§06</b> / Credenciales</div>
         <div class="desc">Principios operativos y cartera representativa de clientes atendidos.</div>
       </div>
       <h2>Confianza calibrada<br>por <em>disciplina operativa.</em></h2>
@@ -2714,7 +2983,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap-lg">
     <div class="sec-head">
       <div class="meta">
-        <div class="index"><b>§06</b> / Póliza</div>
+        <div class="index"><b>§07</b> / Póliza</div>
         <div class="desc">Un contrato de mantenimiento preventivo mensual con correctivos menores incluidos.</div>
       </div>
       <h2>Una póliza que<br><em>define el SLA,</em> no sólo la cobertura.</h2>
@@ -2794,7 +3063,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap-lg">
     <div class="sec-head">
       <div class="meta">
-        <div class="index"><b>§07</b> / Contacto</div>
+        <div class="index"><b>§08</b> / Contacto</div>
         <div class="desc">Respondemos a cotizaciones y auditorías dentro de 24 horas hábiles.</div>
       </div>
       <h2>Iniciemos la auditoría<br><em>de su instalación.</em></h2>

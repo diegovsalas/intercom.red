@@ -3,15 +3,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--
-  =========================================================================
-  GOOGLE TAG MANAGER
-  Reemplaza GTM-XXXXXX por tu ID real cuando crees el contenedor en
-  https://tagmanager.google.com  (gratis, 5 min).
-  Desde GTM podrás añadir GA4, Meta Pixel, LinkedIn Insight y otros
-  SIN tocar este archivo nunca más.
-  =========================================================================
--->
 <script>
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -19,7 +10,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-XXXXXX');
 </script>
-<!-- End Google Tag Manager -->
 <title>INTERCOM — Ingeniería en Seguridad Electrónica Industrial · Nuevo León</title>
 <meta name="description" content="Ingeniería en seguridad electrónica industrial para plantas, CEDIs y corporativos: CCTV, control de acceso y detección NFPA 72 — más una plataforma de productos recurrentes (Video Analytics con IA, Hardware-as-a-Service, SOC remoto 24/7, compliance SaaS y ciberseguridad OT). 22 años en Nuevo León.">
 <meta name="keywords" content="seguridad electrónica industrial Monterrey, CCTV industrial Nuevo León, control de acceso empresarial, detección de incendios NFPA 72, integrador de seguridad industrial, sistemas para plantas industriales, seguridad para centros de distribución, seguridad corporativa Monterrey, misión crítica, parques industriales Nuevo León, redes de comunicación industrial, ingeniería en seguridad electrónica, SOC industrial, auditoría de seguridad, monitoreo 24/7, NOM-008-STPS, ONVIF OSDP, video analytics IA, detección de EPP en planta, reconocimiento de placas LPR, hardware as a service seguridad, HaaS CCTV, monitoring operations center México, SaaS NFPA compliance, ciberseguridad OT IoT, seguridad industrial México, INTERCOM México">
@@ -29,7 +19,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="icon" type="image/png" href="assets/images/64e78223-619.png">
 <link rel="apple-touch-icon" href="assets/images/64e78223-619.png">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
 <meta property="og:url" content="https://intercom.red/">
@@ -38,12 +27,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:description" content="Ingeniería en redes de comunicación y seguridad electrónica para plantas, centros de distribución y corporativos. CCTV, control de acceso, NFPA 72 y monitoreo 24/7. 22 años en Nuevo León.">
 <meta property="og:image" content="https://intercom.red/assets/images/64e78223-619.png">
 
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="INTERCOM — Ingeniería en Seguridad Electrónica Industrial · Nuevo León">
 <meta name="twitter:description" content="22 años protegiendo operaciones industriales, corporativas y de misión crítica en Nuevo León. CCTV, control de acceso, detección de incendios NFPA 72 y SOC 24/7.">
 
-<!-- LocalBusiness schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1544,6 +1531,81 @@ section {
 }
 
 /* ============================================================
+   PYME & HOGAR (KITS)
+   ============================================================ */
+#pyme { background: var(--ink); border-bottom: 1px solid var(--edge-soft); }
+.pyme-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.pyme-card {
+  background: var(--carbon);
+  border: 1px solid var(--edge);
+  display: flex; flex-direction: column;
+  transition: border-color 0.2s, transform 0.25s;
+  overflow: hidden;
+}
+.pyme-card:hover {
+  border-color: var(--amber-dim);
+  transform: translateY(-3px);
+}
+.pyme-img-wrapper {
+  background: #ffffff; /* Fondeamos en blanco para fusionar con tus imágenes */
+  border-bottom: 1px solid var(--edge);
+  overflow: hidden;
+  position: relative;
+}
+/* Truco CSS para "recortar" el header con el número de WhatsApp de las imágenes originales */
+.pyme-img-wrapper img {
+  width: 100%;
+  display: block;
+  clip-path: inset(13% 0 0 0); /* Oculta el 13% superior de la imagen */
+  margin-top: -13%; /* Sube la imagen para rellenar el hueco recortado */
+  object-fit: cover;
+}
+.pyme-body {
+  padding: 24px;
+  display: flex; flex-direction: column; flex: 1;
+}
+.pyme-body .tag {
+  color: var(--amber);
+  margin-bottom: 12px;
+}
+.pyme-body h3 {
+  font-family: var(--font-display);
+  font-size: 18px; font-weight: 700;
+  color: var(--paper);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.pyme-body p {
+  font-size: 13px; color: var(--ash);
+  margin-bottom: 24px; line-height: 1.5;
+}
+.pyme-price {
+  margin-top: auto;
+  font-family: var(--font-display);
+  font-size: 28px; font-weight: 700;
+  color: var(--paper);
+  border-top: 1px solid var(--edge-soft);
+  padding-top: 16px;
+  letter-spacing: -0.02em;
+}
+.pyme-price span {
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 400;
+  color: var(--ash-2); letter-spacing: 0;
+  vertical-align: middle; margin-left: 6px;
+}
+
+@media (max-width: 1100px) {
+  .pyme-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .pyme-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
    CASE STUDIES
    ============================================================ */
 #proyectos { background: var(--carbon); }
@@ -1573,7 +1635,7 @@ section {
   background: linear-gradient(to bottom, transparent 50%, rgba(10,11,13,0.7));
 }
 .case-img .tag-overlay {
-  position: absolute; top: 12px; left: 12px;
+  position: absolute top: 12px; left: 12px;
   z-index: 2;
   padding: 4px 8px;
   background: rgba(10,11,13,0.75);
@@ -2104,14 +2166,8 @@ body.density-spacious section { padding: 128px 0; }
 </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript fallback) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<!-- ============================================================
-     OPS BAR
-     ============================================================ -->
 <div class="opsbar">
   <div class="opsbar-inner">
     <div class="opsbar-item">
@@ -2152,9 +2208,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<!-- ============================================================
-     NAVBAR
-     ============================================================ -->
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="#" class="brand">
@@ -2166,6 +2219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="#plataforma"><span class="num">02</span>Plataforma</a></li>
       <li><a href="#catalogo"><span class="num">03</span>Manifiesto</a></li>
       <li><a href="#cobertura"><span class="num">04</span>Cobertura</a></li>
+      <li><a href="#pyme"><span class="num">04B</span>Pyme</a></li>
       <li><a href="#proyectos"><span class="num">05</span>Proyectos</a></li>
       <li><a href="#poliza"><span class="num">06</span>Póliza</a></li>
       <li><a href="#contacto"><span class="num">07</span>Contacto</a></li>
@@ -2181,13 +2235,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </nav>
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
 <section class="hero" style="border-bottom:none;">
   <div class="wrap-lg">
     <div class="hero-inner">
-      <!-- LEFT -->
       <div class="hero-left">
         <div class="hero-eyebrow">
           <span class="dot"></span>
@@ -2230,7 +2280,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <!-- RIGHT — CCTV MONITOR -->
       <div class="hero-right">
         <div class="monitor">
           <div class="monitor-chrome">
@@ -2324,18 +2373,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <!-- marquee -->
     <div class="hero-marquee">
       <div class="hero-marquee-track" id="heroMarquee">
-        <!-- populated by JS for seamless loop -->
-      </div>
+        </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     SERVICES
-     ============================================================ -->
 <section id="servicios">
   <div class="wrap-lg">
     <div class="sec-head">
@@ -2347,7 +2391,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="svc-grid">
-      <!-- CCTV -->
       <div class="svc">
         <div class="svc-header">
           <span class="svc-id">SVC-01 · CCTV</span>
@@ -2372,7 +2415,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <!-- CONTROL -->
       <div class="svc">
         <div class="svc-header">
           <span class="svc-id">SVC-02 · ACV</span>
@@ -2396,7 +2438,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <!-- FIRE -->
       <div class="svc">
         <div class="svc-header">
           <span class="svc-id">SVC-03 · FIRE</span>
@@ -2419,7 +2460,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <!-- MAINTENANCE -->
       <div class="svc">
         <div class="svc-header">
           <span class="svc-id">SVC-04 · MNT</span>
@@ -2444,9 +2484,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============================================================
-     PLATAFORMA · §02 · product layer sobre base instalada
-     ============================================================ -->
 <section id="plataforma">
   <div class="wrap-lg">
     <div class="sec-head">
@@ -2594,9 +2631,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============================================================
-     CATALOG / MANIFEST
-     ============================================================ -->
 <section id="catalogo">
   <div class="wrap-lg">
     <div class="sec-head">
@@ -2685,9 +2719,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============================================================
-     COVERAGE
-     ============================================================ -->
 <section id="cobertura">
   <div class="wrap-lg">
     <div class="sec-head">
@@ -2736,18 +2767,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </defs>
             <rect width="600" height="480" fill="url(#grid)"></rect>
 
-            <!-- NL state outline (stylized) -->
             <path d="M120,50 L200,40 L320,55 L430,70 L500,130 L520,220 L495,300 L510,380 L450,440 L350,450 L240,435 L160,400 L110,340 L90,240 L100,140 Z" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" stroke-dasharray="3 3"></path>
 
-            <!-- Metro area outline -->
             <path d="M240,230 C250,190 310,180 360,195 C410,205 425,250 420,300 C415,340 360,365 310,360 C250,355 220,320 225,280 Z" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"></path>
 
-            <!-- Reach circle -->
             <circle cx="315" cy="275" r="160" fill="url(#reach)"></circle>
             <circle cx="315" cy="275" r="120" fill="none" stroke="rgba(255,182,39,0.22)" stroke-width="0.8" stroke-dasharray="2 4"></circle>
             <circle cx="315" cy="275" r="70" fill="none" stroke="rgba(255,182,39,0.35)" stroke-width="0.8" stroke-dasharray="2 4"></circle>
 
-            <!-- HQ (San Nicolás) -->
             <g>
               <circle cx="325" cy="270" r="8" fill="none" stroke="#ffb627" stroke-width="1"></circle>
               <circle cx="325" cy="270" r="4" fill="#ffb627"></circle>
@@ -2759,7 +2786,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <text x="340" y="280" fill="#8a8d94" font-family="JetBrains Mono" font-size="8" letter-spacing="1">25.75°N / 100.30°W</text>
             </g>
 
-            <!-- Other cities -->
             <g fill="#ffb627" font-family="JetBrains Mono" font-size="10" letter-spacing="1">
               <circle cx="305" cy="290" r="3"></circle><text x="290" y="308" text-anchor="end" fill="#b8b9be">Monterrey</text>
               <circle cx="280" cy="300" r="3"></circle><text x="270" y="320" text-anchor="end" fill="#b8b9be">S. Pedro</text>
@@ -2770,7 +2796,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <circle cx="230" cy="250" r="3"></circle><text x="220" y="245" text-anchor="end" fill="#b8b9be">García</text>
             </g>
 
-            <!-- Crosshair -->
             <g stroke="rgba(255,182,39,0.4)" stroke-width="0.6">
               <line x1="325" y1="50" x2="325" y2="90"></line>
               <line x1="325" y1="450" x2="325" y2="490"></line>
@@ -2789,9 +2814,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============================================================
-     PROJECTS / CASES
-     ============================================================ -->
+<section id="pyme">
+  <div class="wrap-lg">
+    <div class="sec-head">
+      <div class="meta">
+        <div class="index"><b>§04B</b> / PYME & HOGAR</div>
+        <div class="desc">Soluciones empaquetadas de rápida implementación con el mismo estándar de instalación industrial.</div>
+      </div>
+      <h2>Kits preconfigurados para<br><em>negocios y residencias.</em></h2>
+    </div>
+
+    <div class="pyme-grid">
+      
+      <article class="pyme-card reveal">
+        <div class="pyme-img-wrapper">
+          <img src="assets/images/kit-2-camaras-dahua.png" alt="Kit 2 cámaras Dahua">
+        </div>
+        <div class="pyme-body">
+          <div class="tag">INSTALACIÓN INCLUIDA</div>
+          <h3>Kit Dahua 2 Cámaras HD</h3>
+          <p>Visión nocturna, DVR 4 canales, 20m de cable por cámara y disco duro 500GB. Ideal para hogar o negocio pequeño.</p>
+          <div class="pyme-price">$2,999<span>MXN</span></div>
+        </div>
+      </article>
+
+      <article class="pyme-card reveal">
+        <div class="pyme-img-wrapper">
+          <img src="assets/images/kit-4-camaras-dahua.png" alt="Kit 4 cámaras Dahua">
+        </div>
+        <div class="pyme-body">
+          <div class="tag">INSTALACIÓN INCLUIDA</div>
+          <h3>Kit Dahua 4 Cámaras HD</h3>
+          <p>Cobertura total. DVR 4 canales, visión nocturna, disco duro 500GB. Monitoreo 24/7 desde iPhone y Android.</p>
+          <div class="pyme-price">$4,999<span>MXN</span></div>
+        </div>
+      </article>
+
+      <article class="pyme-card reveal">
+        <div class="pyme-img-wrapper">
+          <img src="assets/images/kit-4-camaras-hilook.png" alt="Kit 4 cámaras HiLook">
+        </div>
+        <div class="pyme-body">
+          <div class="tag">IVA INCLUIDO · INSTALADO</div>
+          <h3>Kit HiLook 4 Cámaras 2MP</h3>
+          <p>Resolución 2MP by Hikvision. Incluye DVR 4 canales, HDD 500GB y todo el material para instalación profesional.</p>
+          <div class="pyme-price">$6,999<span>MXN</span></div>
+        </div>
+      </article>
+
+      <article class="pyme-card reveal">
+        <div class="pyme-img-wrapper">
+          <img src="assets/images/electroiman-seguridad.png" alt="Electroimán de seguridad">
+        </div>
+        <div class="pyme-body">
+          <div class="tag">SOLO EQUIPO</div>
+          <h3>Control de Acceso Yale</h3>
+          <p>Electroimán de seguridad con botón liberador inalámbrico y supresor de picos. Compatible con puertas de madera, vidrio o metal.</p>
+          <div class="pyme-price">$3,200<span>MXN</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 <section id="proyectos">
   <div class="wrap-lg">
     <div class="sec-head">
@@ -2902,9 +2988,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============================================================
-     CREDENTIALS
-     ============================================================ -->
 <section id="credenciales">
   <div class="wrap-lg">
     <div class="sec-head">
@@ -2976,9 +3059,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============================================================
-     POLIZA
-     ============================================================ -->
 <section id="poliza">
   <div class="wrap-lg">
     <div class="sec-head">
@@ -3056,9 +3136,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============================================================
-     CONTACT
-     ============================================================ -->
 <section id="contacto" style="border-bottom:none;">
   <div class="wrap-lg">
     <div class="sec-head">
@@ -3149,9 +3226,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
 <footer class="footer">
   <div class="wrap-lg">
     <div class="foot-main">
@@ -3200,9 +3274,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<!-- ============================================================
-     SCRIPTS
-     ============================================================ -->
 <script>
 const TWEAKS = /*EDITMODE-BEGIN*/{
   "accent": "#ffb627",
@@ -3339,7 +3410,7 @@ const revealObs = new IntersectionObserver(es => {
     if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
   });
 }, {threshold:0.08});
-document.querySelectorAll('.sec-head, .svc, .case, .manifest, .poliza-card, .sla-item, .cov-map, .clients-grid, .testimonial').forEach(el => {
+document.querySelectorAll('.sec-head, .svc, .case, .manifest, .poliza-card, .sla-item, .cov-map, .clients-grid, .testimonial, .pyme-card').forEach(el => {
   el.classList.add('reveal'); revealObs.observe(el);
 });
 
@@ -3448,9 +3519,6 @@ document.addEventListener('click', function(e) {
 })();
 </script>
 
-<!-- ============================================================
-     WHATSAPP WELCOME BUBBLE + FLOATING BUTTON
-     ============================================================ -->
 <div class="wa-welcome" id="waWelcome" role="dialog" aria-label="Mensaje de bienvenida">
   <button class="wa-welcome-close" id="waWelcomeClose" aria-label="Cerrar mensaje" type="button">×</button>
   <strong>¿Podemos ayudarte?</strong>
@@ -3464,7 +3532,6 @@ document.addEventListener('click', function(e) {
   </svg>
 </a>
 
-<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -3476,6 +3543,4 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
-
 </body></html>
